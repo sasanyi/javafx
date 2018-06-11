@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="417.0" prefWidth="566.0" style="-fx-background-color: #123456;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxsanyi.FXMLRootController">
+   <children>
+      <MenuBar layoutY="-1.0" prefHeight="29.0" prefWidth="580.0" style="-fx-background-color: #F2F2F2">
+        <menus>
+          <Menu mnemonicParsing="false" text="Program">
+            <items>
+              <MenuItem fx:id="jmenuKilep" mnemonicParsing="false" onAction="#jmenuKilep" text="Kilépés" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Szerkesztés">
+            <items>
+              <MenuItem fx:id="jmenuAdat" mnemonicParsing="false" onAction="#jmenuAdat" text="Adat emlékeztető" />
+                  <MenuItem fx:id="jmenuHiba" mnemonicParsing="false" onAction="#jmenuHiba" text="Hiba bejelentése" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <ImageView fx:id="img1" fitHeight="87.0" fitWidth="69.0" layoutX="249.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@routercim.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="l1" layoutX="145.0" layoutY="48.0" text="Check" textAlignment="CENTER" textFill="WHITE" underline="true">
+         <font>
+            <Font name="Tahoma Bold" size="34.0" />
+         </font>
+      </Label>
+      <Label fx:id="l2" layoutX="318.0" layoutY="48.0" text="Router" textAlignment="CENTER" textFill="WHITE" underline="true">
+         <font>
+            <Font name="Tahoma Bold" size="34.0" />
+         </font>
+      </Label>
+      <Label layoutX="192.0" layoutY="126.0" prefHeight="19.0" prefWidth="182.0" text="Kérem adja meg az adatokat:" textAlignment="CENTER" textFill="#9e7676">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="img2" fitHeight="61.0" fitWidth="51.0" layoutX="145.0" layoutY="167.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@username.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img3" fitHeight="75.0" fitWidth="51.0" layoutX="145.0" layoutY="257.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@password.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="tfUsername" layoutX="218.0" layoutY="180.0" prefHeight="27.0" prefWidth="210.0" promptText="Felhasználó név...">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <Button fx:id="loginbutton" layoutX="218.0" layoutY="337.0" mnemonicParsing="false" onAction="#loginButton" prefHeight="43.0" prefWidth="210.0" style="-fx-background-color: #FE642E;" text="Belépés" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="tfPass" layoutX="218.0" layoutY="266.0" prefHeight="29.0" prefWidth="210.0" promptText="Jelszó....">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </PasswordField>
+   </children>
+</AnchorPane>

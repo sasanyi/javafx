@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="bejroot" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="524.0" prefWidth="566.0" style="-fx-background-color: #123456;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxsanyi.FXMLPage1Controller">
+   <children>
+      <MenuBar layoutY="-1.0" prefHeight="29.0" prefWidth="575.0" style="-fx-background-color: #F2F2F2">
+        <menus>
+          <Menu mnemonicParsing="false" text="Program">
+            <items>
+              <MenuItem fx:id="jmenuKilep" mnemonicParsing="false"  text="Kilépés" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Szerkesztés">
+            <items>
+              <MenuItem fx:id="jmenuAdat" mnemonicParsing="false"  text="Adat emlékeztető" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label fx:id="l4" layoutX="423.0" layoutY="500.0" text="AkosSoftWare2018" textFill="#d07636">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="img1" fitHeight="87.0" fitWidth="69.0" layoutX="249.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@routercim.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="l1" layoutX="145.0" layoutY="48.0" text="Check" textAlignment="CENTER" textFill="WHITE" underline="true">
+         <font>
+            <Font name="Tahoma Bold" size="34.0" />
+         </font>
+      </Label>
+      <Label fx:id="l2" layoutX="318.0" layoutY="48.0" text="Router" textAlignment="CENTER" textFill="WHITE" underline="true">
+         <font>
+            <Font name="Tahoma Bold" size="34.0" />
+         </font>
+      </Label>
+      <Label layoutX="229.0" layoutY="126.0" prefHeight="19.0" prefWidth="117.0" text="Írja meg a levelét:" textAlignment="CENTER" textFill="#9e7676">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="img2" fitHeight="61.0" fitWidth="51.0" layoutX="94.0" layoutY="167.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@username.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="tfTargy" layoutX="167.0" layoutY="180.0" prefHeight="29.0" prefWidth="306.0" promptText="Tárgy...">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <Button fx:id="levelbutton" layoutX="167.0" layoutY="437.0" mnemonicParsing="false"  prefHeight="44.0" prefWidth="306.0" style="-fx-background-color: #FE642E;" text="Küldés" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="tfUzenet" layoutX="167.0" layoutY="226.0" prefHeight="200.0" prefWidth="306.0" promptText="Üzenet..." />
+      <Button fx:id="jmenuVissza" layoutX="514.0" mnemonicParsing="false" onAction="#btnVissza" text="Vissza" />
+   </children>
+</AnchorPane>
